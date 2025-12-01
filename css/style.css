@@ -1,0 +1,307 @@
+/* ======================================================
+   Fonte, cores, animações e estilos unificados
+====================================================== */
+
+:root {
+    --cor-primaria: #593D2B;
+    --cor-secundaria: #C79248;
+    --cor-clara: #faf7f2;
+    --cor-texto: #363636;
+    --cor-branco: #ffffff;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #ffffff;
+    color: var(--cor-texto);
+    margin: 0;
+    padding: 0;
+}
+
+/* ======================================================
+   NAVBAR
+====================================================== */
+
+.navbar {
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+/* Links do menu */
+.nav-link {
+    font-size: 1rem;
+    transition: 0.2s;
+}
+
+.nav-link:hover {
+    color: var(--cor-secundaria) !important;
+}
+
+/* ======================================================
+   BANNERS (index, sobre e visita)
+====================================================== */
+
+.banner-modern,
+.sub-banner {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.banner-modern {
+    height: 70vh;
+}
+
+.sub-banner {
+    height: 33vh;
+}
+
+.sub-banner-overlay,
+.banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+}
+
+/* Títulos */
+.titulo-principal {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: white;
+}
+
+.sub-banner-title {
+    position: relative;
+    color: white;
+    font-size: 2.6rem;
+    font-weight: 700;
+    text-shadow: 0px 2px 9px rgba(0,0,0,0.7);
+    margin-left: 20px;
+}
+
+/* ======================================================
+   SEÇÕES E TEXTOS
+====================================================== */
+
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.titulo-2 {
+    font-size: 2.2rem;
+    color: var(--cor-primaria);
+    font-weight: 700;
+}
+
+p {
+    color: var(--cor-texto);
+    font-size: 1.05rem;
+}
+
+/* ======================================================
+   BOTÕES
+====================================================== */
+
+.btn-primario,
+.btn-secundario {
+    display: inline-block;
+    padding: 10px 26px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.25s ease;
+}
+
+.btn-primario {
+    background: var(--cor-secundaria);
+    color: white;
+    border: none;
+}
+
+.btn-primario:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.20);
+}
+
+.btn-secundario {
+    background: var(--cor-primaria);
+    color: white;
+}
+
+.btn-secundario:hover {
+    background: #6f4d37;
+}
+
+/* ======================================================
+   CAPIVARA (index somente)
+====================================================== */
+
+.capivara-animada img {
+    transition: transform 0.25s ease;
+    width: 300px;
+    height: auto;
+}
+
+.capivara-animada img:hover {
+    transform: scale(1.05);
+}
+
+/* ======================================================
+   CARDS GERAIS
+====================================================== */
+
+.card-custom {
+    background: var(--cor-branco);
+    padding: 25px;
+    border-radius: 12px;
+    transition: 0.3s ease;
+    border: 1px solid #e8e4df;
+}
+
+.card-custom:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 26px rgba(0,0,0,0.15);
+}
+
+/* ======================================================
+   ANIMAÇÕES GERAIS
+====================================================== */
+
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(25px);
+    animation: fadeUp 0.9s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Zoom de imagens */
+.scale-hover {
+    transition: transform 0.3s ease;
+}
+
+.scale-hover:hover {
+    transform: scale(1.04);
+}
+
+/* ======================================================
+   VISITA – layout específico
+====================================================== */
+
+.visita-container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* Cards da página Visite */
+.cards-visita .card-visita {
+    background: var(--cor-clara);
+    padding: 22px;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.cards-visita .card-visita:hover {
+    background: var(--cor-secundaria);
+    color: white;
+    transform: translateY(-6px);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.2);
+}
+
+.cards-visita h3 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* ======================================================
+   RODAPÉ
+====================================================== */
+
+.footer-lapan {
+    background-color: #593D2B; /* mesma cor do menu */
+    color: #ffffff;           /* texto branco puro */
+    margin-top: 40px;
+    padding-top: 35px;
+    padding-bottom: 20px;
+}
+
+.footer-title {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.45rem;
+    margin-bottom: 5px;
+}
+
+.footer-sub {
+    color: #ffffff ;
+    font-size: 0.95rem;
+    opacity: 0.85;
+}
+
+.footer-link {
+    margin: 0 12px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.footer-link:hover {
+    color: #C79248; /* dourado suave para destaque */
+}
+
+.footer-contact {
+    margin: 3px 0;
+    font-size: 0.95rem;
+    color: #ffffff;
+}
+
+.footer-contact i {
+    margin-right: 8px;
+    color: #ffffff; /* ícones brancos */
+}
+
+.footer-divider {
+    border-color: rgba(255, 255, 255, 0.25);
+    margin-top: 25px;
+}
+
+.footer-copy {
+    margin-top: 18px;
+    opacity: 0.75;
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+/* logos (opcioanl kk) */
+.footer-logo {
+    height: 45px;
+    margin-right: 12px;
+    margin-top: 10px;
+    filter: brightness(1.1);
+}
+
+/* animação */
+.footer-lapan {
+    animation: fadeIn 0.8s ease-out;
+}
