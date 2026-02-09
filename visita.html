@@ -18,96 +18,73 @@
 </head>
 <body>
 
-<!-- NAVBAR -->
-<header>
-<nav class="navbar navbar-expand-lg" style="background-color:#593D2B;">
-    <div class="container">
-    <a class="navbar-brand text-light fw-bold" href="index.html">
-        LAPAN <span class="text-warning">UFMS</span>
-    </a>
+    <!-- NAVBAR -->
+    <header>
+    <nav class="navbar navbar-expand-lg" style="background-color:#593D2B;">
+        <div class="container">
+        <a class="navbar-brand text-light fw-bold" href="home.html">
+            LAPAN <span class="text-warning">UFMS</span>
+        </a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
-        <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
-    </button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+            <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+        </button>
 
-    <div class="collapse navbar-collapse" id="menuPrincipal">
-        <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link text-light" href="index.html">Início</a></li>
-        <li class="nav-item"><a class="nav-link text-light" href="visita.html">Visita</a></li>
-        <li class="nav-item"><a class="nav-link text-light" href="sobre.html">Sobre</a></li>
-        <li class="nav-item"><a class="nav-link text-light" href="contato.html">Contato</a></li>
-        </ul>
-    </div>
-    </div>
-</nav>
-</header>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link text-light" href="home.html">Início</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="visita.html">Visita</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="projetos.html">Projetos</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="contato.html">Contato</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="sobre.html">Sobre</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    </header>
 
-<!-- BANNER -->
- <!-- ================= BANNER CURTO ================= -->
-    <section class="fade-in"
-        style="
-            background: url('img/campus_cpan.jpg') center/cover no-repeat;
-            height: 32vh;
-            display: flex;
-            align-items: center;
-            position: relative;
-        "
-    >
-        <div style="
-            position:absolute;
-            inset:0;
-            background: rgba(0,0,0,0.45);
-        "></div>
+    <!-- BANNER CURTO -->
+    <section class="banner-curto fade-in">
+        <div class="banner-overlay"></div>
 
-        <div class="container" style="position:relative;">
-            <h1 class="titulo-principal" 
-            style="color:white;">Visite
-            </h1>
+        <div class="container banner-conteudo">
+            <h1 class="titulo-principal-banner">Visite</h1>
+            <h2 class="subtitulo-banner">Visite o LAPAN e conheça nosso acervo</h2>
+        </div>
 
-            <h2 style="
-                    font-weight:400;
-                    margin-bottom:20px;
-                    color:#f6efe3;
-                    text-shadow: 0 2px 8px rgba(0,0,0,0.7);
-                ">
-                    Visite o LAPAN e conheça nosso acervo
-            </h2>
+    </section>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <section class="visita-container container">
+
+        <div class="row align-items-center">
+
+            <!-- Texto -->
+            <div class="col-lg-6 visita-texto  fade-in">
+                <h2 class="mb-3 titulo-2">Agendamento de Visitas</h2>
+
+                <p>
+                    Para visitar o <strong>LAPAN – Laboratório de Arqueologia da UFMS</strong>, 
+                    é necessário realizar um agendamento prévio através do nosso formulário oficial.
+                </p>
+
+                <p>
+                    Durante a visita guiada, você conhecerá parte do acervo, atividades internas do laboratório 
+                    e detalhes sobre as pesquisas arqueológicas desenvolvidas pela equipe.
+                </p>
+
+                <a href="https://docs.google.com/forms/d/17f9W7bM31a10TC_OdDU89yMYTSRSKsKSUtyoqOXtAE0/viewform?edit_requested=true#settings" target="_blank" class="btn-primario mt-3">
+                📅 Fazer Agendamento
+                </a>
+            </div>
+
+            <!-- Imagem -->
+            <div class="col-lg-6">
+                <img src="img/unidade3.jpg" alt="Unidade III – LAPAN" class="img-fluid rounded shadow-sm scale-hover">
+            </div>
 
         </div>
     </section>
-
-<!-- TEXTO + IMAGEM -->
-<section class="visita-container container">
-
-    <div class="row align-items-center">
-
-        <!-- Texto -->
-        <div class="col-lg-6 visita-texto fade-in">
-            <h2 class="mb-3">Agendamento de Visitas</h2>
-
-            <p>
-                Para visitar o <strong>LAPAN – Laboratório de Arqueologia da UFMS</strong>, 
-                é necessário realizar um agendamento prévio através do nosso formulário oficial.
-            </p>
-
-            <p>
-                Durante a visita guiada, você conhecerá parte do acervo, atividades internas do laboratório 
-                e detalhes sobre as pesquisas arqueológicas desenvolvidas pela equipe.
-            </p>
-
-            <a href="https://docs.google.com/forms/d/17f9W7bM31a10TC_OdDU89yMYTSRSKsKSUtyoqOXtAE0/viewform?edit_requested=true#settings" target="_blank" class="btn btn-warning fw-bold px-4 py-2 mt-3 shadow-sm"
-               style="background-color:#C79248; border:none;">
-               📅 Fazer Agendamento
-            </a>
-        </div>
-
-        <!-- Imagem -->
-        <div class="col-lg-6">
-            <img src="img/unidade3.jpg" alt="Unidade III – LAPAN" class="img-fluid rounded shadow-sm scale-hover">
-        </div>
-
-    </div>
-</section>
 
 <!-- CARDS -->
 <section class="cards-visita container my-5">
@@ -138,7 +115,7 @@
     </div>
 </section>
 
-    <!-- ================= RODAPÉ ================= -->
+    <!-- RODAPÉ -->
 
     <footer class="footer-lapan fade-in">
         <div class="container py-4">
@@ -153,10 +130,11 @@
 
                 <!-- Links -->
                 <div class="col-md-4 text-center mb-3 mb-md-0">
-                    <a href="index.html" class="footer-link">Início</a>
+                    <a href="home.html" class="footer-link">Início</a>
                     <a href="visita.html" class="footer-link">Visita</a>
-                    <a href="sobre.html" class="footer-link">Sobre</a>
+                    <a href="projetos.html" class="footer-link">Projetos</a>
                     <a href="contato.html" class="footer-link">Contato</a>
+                    <a href="sobre.html" class="footer-link">Sobre</a>
                 </div>
 
                 <!-- Contatos -->
