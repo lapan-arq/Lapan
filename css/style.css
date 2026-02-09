@@ -40,48 +40,60 @@ body {
     color: var(--cor-secundaria) !important;
 }
 
-/* ======================================================
-   BANNERS (index, sobre e visita)
-====================================================== */
 
-.banner-modern,
-.sub-banner {
-    position: relative;
-    background-size: cover;
-    background-position: center;
+/* ===============================
+   BANNER CURTO
+================================ */
+.banner-curto {
+    background: url('../img/campus_cpan.jpg') center / cover no-repeat;
+    height: 32vh;
+    min-height: 260px;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
-.banner-modern {
-    height: 70vh;
-}
-
-.sub-banner {
-    height: 33vh;
-}
-
-.sub-banner-overlay,
+/* Overlay escuro */
 .banner-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.45);
+    background: rgba(0, 0, 0, 0.45);
 }
 
-/* Títulos */
-.titulo-principal {
+/* Conteúdo */
+.banner-conteudo {
+    position: relative;
+    z-index: 2;
+}
+
+/* Título principal */
+.titulo-principal-banner {
     font-size: 2.8rem;
     font-weight: 700;
     color: white;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
 }
 
-.sub-banner-title {
-    position: relative;
-    color: white;
-    font-size: 2.6rem;
-    font-weight: 700;
-    text-shadow: 0px 2px 9px rgba(0,0,0,0.7);
-    margin-left: 20px;
+/* Subtítulo */
+.subtitulo-banner {
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #f6efe3;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* ===============================
+   RESPONSIVO
+================================ */
+@media (max-width: 768px) {
+    .banner-curto {
+        height: auto;
+        padding: 60px 0;
+    }
+
+    .subtitulo-banner {
+        font-size: 1.1rem;
+    }
 }
 
 /* ======================================================
@@ -102,6 +114,9 @@ section {
 p {
     color: var(--cor-texto);
     font-size: 1.05rem;
+}
+.text-justify{
+    text-align: justify;
 }
 
 /* ======================================================
@@ -139,7 +154,7 @@ p {
 }
 
 /* ======================================================
-   CAPIVARA (index somente)
+   CAPIVARA (Home somente)
 ====================================================== */
 
 .capivara-animada img {
@@ -172,7 +187,6 @@ p {
 /* ======================================================
    ANIMAÇÕES GERAIS
 ====================================================== */
-
 
 .fade-up {
     opacity: 0;
@@ -232,6 +246,104 @@ p {
     font-weight: 600;
     margin-bottom: 10px;
 }
+
+/* ======================================================
+   PROJETOS DE EXTENSÃO – PÁGINA
+====================================================== */
+
+/* ===============================
+   PALETA BASE (MARROM CLARO)
+================================ */
+:root {
+    --marrom-claro: #e8dfd2;
+    --marrom-medio: #c9b8a3;
+    --marrom-texto: #4a3b2a;
+    --bege-fundo: #f6f3ee;
+}
+
+
+/* ===============================
+   CARDS DOS PROJETOS
+================================ */
+.card-custom-projeto {
+    background-color: var(--bege-fundo);
+    border-radius: 12px;
+    padding: 1.8rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    border-left: 6px solid var(--marrom-medio);
+    transition: all 0.3s ease;
+}
+
+.card-custom-projeto h3 {
+    color: var(--marrom-texto);
+    font-size: 1.3rem;
+}
+
+.card-custom-projeto p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 0.8rem;
+}
+
+/* Hover interativo */
+.card-custom-projeto:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+    border-left-color: var(--marrom-texto);
+}
+
+/* ===============================
+   BOTÕES
+================================ */
+.btn-primario-projeto {
+    padding: 0.6rem 1.4rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+/* Botão primario projetos */
+.btn-primario-projeto {
+    background-color: var(--marrom-claro);
+    color: var(--marrom-texto);
+}
+
+.btn-primario-projeto:hover {
+    background-color: var(--marrom-medio);
+    transform: scale(1.05);
+}
+
+/* ===============================
+   FUNÇÃO FADE-UP (INTERAÇÃO)
+================================ */
+.fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===============================
+   RESPONSIVO
+================================ */
+@media (max-width: 768px) {
+    .sub-banner-title {
+        font-size: 1.8rem;
+    }
+
+    .card-custom {
+        padding: 1.4rem;
+    }
+}
+
 
 /* ======================================================
    RODAPÉ
