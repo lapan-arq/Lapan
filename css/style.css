@@ -47,7 +47,7 @@ body {
 .banner-curto {
     background: url('../img/campus_cpan.jpg') center / cover no-repeat;
     height: 32vh;
-    min-height: 260px;
+    min-height: 220px;
     display: flex;
     align-items: center;
     position: relative;
@@ -68,7 +68,7 @@ body {
 
 /* Título principal */
 .titulo-principal-banner {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
     font-weight: 700;
     color: white;
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
@@ -76,6 +76,7 @@ body {
 
 /* Subtítulo */
 .subtitulo-banner {
+    font-size: 1.9rem;
     font-weight: 400;
     margin-bottom: 20px;
     color: #f6efe3;
@@ -153,17 +154,19 @@ p {
     background: #6f4d37;
 }
 
+
+
 /* ======================================================
-   CAPIVARA (Home somente)
+   Tatu (Home somente)
 ====================================================== */
 
-.capivara-animada img {
+.tatu-animado img {
     transition: transform 0.25s ease;
     width: 300px;
     height: auto;
 }
 
-.capivara-animada img:hover {
+.tatu-animado img:hover {
     transform: scale(1.05);
 }
 
@@ -236,8 +239,8 @@ p {
 }
 
 .cards-visita .card-visita:hover {
-    background: var(--cor-secundaria);
-    color: white;
+    background: var(--marrom-medio);
+    color: rgb(67, 54, 54);
     transform: translateY(-6px);
     box-shadow: 0 14px 28px rgba(0,0,0,0.2);
 }
@@ -245,6 +248,23 @@ p {
 .cards-visita h3 {
     font-weight: 600;
     margin-bottom: 10px;
+}
+
+.btn-primario-visita {
+    padding: 0.6rem 1.4rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+.btn-primario-visita {
+    background: var(--marrom-claro);
+    color: black;
+}
+
+.btn-primario-visita:hover {
+    background: var(--marrom-medio);
 }
 
 /* ======================================================
@@ -257,6 +277,7 @@ p {
 :root {
     --marrom-claro: #e8dfd2;
     --marrom-medio: #c9b8a3;
+    --marrom-escuro: #593D2B;
     --marrom-texto: #4a3b2a;
     --bege-fundo: #f6f3ee;
 }
