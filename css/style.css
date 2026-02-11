@@ -1,5 +1,5 @@
 /* ======================================================
-   Fonte, cores, animações e estilos unificados
+   Fonte, cores e estilos globais
 ====================================================== */
 
 :root {
@@ -8,6 +8,12 @@
     --cor-clara: #faf7f2;
     --cor-texto: #363636;
     --cor-branco: #ffffff;
+
+    --marrom-claro: #e8dfd2;
+    --marrom-medio: #c9b8a3;
+    --marrom-escuro: #593D2B;
+    --marrom-texto: #4a3b2a;
+    --bege-fundo: #f6f3ee;
 }
 
 body {
@@ -17,6 +23,150 @@ body {
     margin: 0;
     padding: 0;
 }
+
+/* ======================================================
+   SEÇÕES E TEXTOS
+====================================================== */
+
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.titulo-2 {
+    font-size: 2.2rem;
+    color: var(--cor-primaria);
+    font-weight: 700;
+}
+
+p {
+    color: var(--cor-texto);
+    font-size: 1.05rem;
+}
+.text-justify{
+    text-align: justify;
+}
+.texto-marrom-claro {
+    color: #e9cdb3;
+}
+.texto-marrom-medio {
+    color: #f7dcb8;
+}
+
+
+/* ======================================================
+   BOTÕES
+====================================================== */
+
+.btn-primario,
+.btn-secundario,.btn-terciario{
+    display: inline-block;
+    padding: 10px 26px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.25s ease;
+}
+.btn-quaternario {
+    display: inline-block;
+    padding: 0.6rem 1.4rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primario {
+    background: var(--cor-secundaria);
+    color: white;
+    border: none;
+}
+
+.btn-primario:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.20);
+}
+
+.btn-secundario {
+    background: var(--cor-primaria);
+    color: white;
+}
+
+.btn-secundario:hover {
+    background: #6f4d37;
+}
+
+.btn-terciario {
+    background: var(--marrom-claro);
+    color: black;
+}
+
+.btn-terciario:hover {
+    background: var(--marrom-medio);
+}
+
+.btn-quaternario {
+    background-color: var(--marrom-claro);
+    color: #363636;
+}
+
+.btn-quaternario:hover {
+    background-color: var(--marrom-medio);
+    transform: scale(1.05);
+}
+
+
+/* ======================================================
+   CARDS GERAIS
+====================================================== */
+
+.card-custom {
+    background: var(--cor-branco);
+    padding: 25px;
+    border-radius: 12px;
+    transition: 0.3s ease;
+    border: 1px solid #e8e4df;
+}
+
+.card-custom:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 26px rgba(0,0,0,0.15);
+}
+
+
+/* ======================================================
+   ANIMAÇÕES GERAIS
+====================================================== */
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(25px);
+    animation: fadeUp 0.9s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Zoom de imagens */
+.scale-hover {
+    transition: transform 0.3s ease;
+}
+
+.scale-hover:hover {
+    transform: scale(1.04);
+}
+
 
 /* ======================================================
    NAVBAR
@@ -84,7 +234,7 @@ body {
 }
 
 /* ===============================
-   RESPONSIVO
+   RESPONSIVO BANNER
 ================================ */
 @media (max-width: 768px) {
     .banner-curto {
@@ -96,64 +246,6 @@ body {
         font-size: 1.1rem;
     }
 }
-
-/* ======================================================
-   SEÇÕES E TEXTOS
-====================================================== */
-
-section {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.titulo-2 {
-    font-size: 2.2rem;
-    color: var(--cor-primaria);
-    font-weight: 700;
-}
-
-p {
-    color: var(--cor-texto);
-    font-size: 1.05rem;
-}
-.text-justify{
-    text-align: justify;
-}
-
-/* ======================================================
-   BOTÕES
-====================================================== */
-
-.btn-primario,
-.btn-secundario {
-    display: inline-block;
-    padding: 10px 26px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.25s ease;
-}
-
-.btn-primario {
-    background: var(--cor-secundaria);
-    color: white;
-    border: none;
-}
-
-.btn-primario:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.20);
-}
-
-.btn-secundario {
-    background: var(--cor-primaria);
-    color: white;
-}
-
-.btn-secundario:hover {
-    background: #6f4d37;
-}
-
 
 
 /* ======================================================
@@ -170,55 +262,6 @@ p {
     transform: scale(1.05);
 }
 
-/* ======================================================
-   CARDS GERAIS
-====================================================== */
-
-.card-custom {
-    background: var(--cor-branco);
-    padding: 25px;
-    border-radius: 12px;
-    transition: 0.3s ease;
-    border: 1px solid #e8e4df;
-}
-
-.card-custom:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 10px 26px rgba(0,0,0,0.15);
-}
-
-/* ======================================================
-   ANIMAÇÕES GERAIS
-====================================================== */
-
-.fade-up {
-    opacity: 0;
-    transform: translateY(25px);
-    animation: fadeUp 0.9s ease-out forwards;
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Zoom de imagens */
-.scale-hover {
-    transition: transform 0.3s ease;
-}
-
-.scale-hover:hover {
-    transform: scale(1.04);
-}
 
 /* ======================================================
    VISITA – layout específico
@@ -250,42 +293,12 @@ p {
     margin-bottom: 10px;
 }
 
-.btn-primario-visita {
-    padding: 0.6rem 1.4rem;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    display: inline-block;
-}
-.btn-primario-visita {
-    background: var(--marrom-claro);
-    color: black;
-}
-
-.btn-primario-visita:hover {
-    background: var(--marrom-medio);
-}
 
 /* ======================================================
    PROJETOS DE EXTENSÃO – PÁGINA
 ====================================================== */
 
-/* ===============================
-   PALETA BASE (MARROM CLARO)
-================================ */
-:root {
-    --marrom-claro: #e8dfd2;
-    --marrom-medio: #c9b8a3;
-    --marrom-escuro: #593D2B;
-    --marrom-texto: #4a3b2a;
-    --bege-fundo: #f6f3ee;
-}
-
-
-/* ===============================
-   CARDS DOS PROJETOS
-================================ */
+/* Cards da página Projetos */
 .card-custom-projeto {
     background-color: var(--bege-fundo);
     border-radius: 12px;
@@ -306,63 +319,10 @@ p {
     margin-bottom: 0.8rem;
 }
 
-/* Hover interativo */
 .card-custom-projeto:hover {
     transform: translateY(-6px);
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
     border-left-color: var(--marrom-texto);
-}
-
-/* ===============================
-   BOTÕES
-================================ */
-.btn-primario-projeto {
-    padding: 0.6rem 1.4rem;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    display: inline-block;
-}
-
-/* Botão primario projetos */
-.btn-primario-projeto {
-    background-color: var(--marrom-claro);
-    color: var(--marrom-texto);
-}
-
-.btn-primario-projeto:hover {
-    background-color: var(--marrom-medio);
-    transform: scale(1.05);
-}
-
-/* ===============================
-   FUNÇÃO FADE-UP (INTERAÇÃO)
-================================ */
-.fade-up {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeUp 0.8s ease forwards;
-}
-
-@keyframes fadeUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* ===============================
-   RESPONSIVO
-================================ */
-@media (max-width: 768px) {
-    .sub-banner-title {
-        font-size: 1.8rem;
-    }
-
-    .card-custom {
-        padding: 1.4rem;
-    }
 }
 
 
