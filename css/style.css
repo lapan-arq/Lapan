@@ -53,6 +53,21 @@ p {
     color: #f7dcb8;
 }
 
+.titulo-secao {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--cor-primaria);
+}
+
+.subtitulo-secao {
+    font-size: 1rem;
+    color: #7a6f63;
+}
+
+.subtitulo-secao-2 {
+    font-size: 1rem;
+    color: #644520;
+}
 
 /* ======================================================
    BOTÕES
@@ -408,16 +423,6 @@ p {
     padding-bottom: 60px;
 }
 
-.titulo-secao {
-    font-size: 2.2rem;
-    font-weight: 700;
-    color: var(--cor-primaria);
-}
-
-.subtitulo-secao {
-    font-size: 1rem;
-    color: #7a6f63;
-}
 
 /* Container individual do item */
 .acervo-item {
