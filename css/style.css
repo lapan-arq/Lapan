@@ -10,6 +10,7 @@
     --cor-branco: #ffffff;
 
     --marrom-claro: #e8dfd2;
+    --marrom-bem-claro: #fdf5e7;
     --marrom-medio: #c9b8a3;
     --marrom-escuro: #593D2B;
     --marrom-texto: #4a3b2a;
@@ -42,6 +43,9 @@ section {
 p {
     color: var(--cor-texto);
     font-size: 1.05rem;
+}
+.texto-marrom-bem-claro {
+    color: var(--marrom-bem-claro);
 }
 .text-justify{
     text-align: justify;
@@ -210,7 +214,7 @@ p {
    BANNER CURTO
 ================================ */
 .banner-curto {
-    background: url('../img/campus_cpan.jpg') center / cover no-repeat;
+    background: url('../img/site/campus_cpan.jpg') center / cover no-repeat;
     height: 32vh;
     min-height: 220px;
     display: flex;
@@ -277,6 +281,176 @@ p {
     transform: scale(1.05);
 }
 
+
+
+/* ================= EVENTO ================= */
+/* Outro banner para Futuras mudancas */
+.evento-banner {
+    background: url('../img/eventos/banner.png') center/cover no-repeat;
+    height: 45vh;
+    min-height: 220px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.evento-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.evento-banner-content {
+    position: relative;
+    color: #fff;
+}
+
+.titulo-principal-evento-banner {
+    font-size: 1.80rem;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.subtitulo-banner {
+    font-weight: 400;
+    color: #f6efe3;
+    margin-top: 10px;
+}
+
+.evento-data {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.evento-local {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+
+/* ================= PANFLETO EVENTO================= */
+.panfleto-container {
+    display: flex;
+    justify-content: center;
+}
+
+.panfleto-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 15px;
+    max-width: 500px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.panfleto-card:hover {
+    transform: translateY(-5px);
+}
+
+.panfleto-card img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.panfleto-botoes {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+/* ================= PROGRAMAÇÃO EVENTO ================= */
+.programacao-evento-box {
+    display: grid;
+    gap: 20px;
+}
+
+.programacao-evento-item {
+    background: #f6efe3;
+    border-left: 5px solid #a67c52;
+    padding: 15px 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.programacao-evento-item:hover {
+    background: #efe4d2;
+}
+
+.programacao-evento-item h5 {
+    margin-bottom: 5px;
+    color: #5a4633;
+}
+
+
+/* ================= LOGOS ================= */
+.logos-evento {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.logos-evento img {
+    height: 60px;
+    opacity: 0.85;
+    transition: 0.3s;
+}
+
+.logos-evento img:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+
+/* ================= CTA FINAL ================= */
+.evento-cta {
+    background: #f6efe3;
+    padding: 40px 20px;
+    margin-top: 60px;
+}
+
+.evento-cta h3 {
+    margin-bottom: 10px;
+    color: #5a4633;
+}
+
+.evento-cta p {
+    color: #6b5a48;
+}
+
+.botoes-evento {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* ================= RESPONSIVO EVENTO  ================= */
+@media (max-width: 768px) {
+
+    .evento-banner {
+        height: 55vh;
+        text-align: center;
+    }
+
+    .evento-banner-content {
+        text-align: center;
+    }
+
+    .panfleto-card {
+        max-width: 90%;
+    }
+
+    .logos-evento img {
+        height: 45px;
+    }
+}
 
 /* ======================================================
    VISITA – layout específico
