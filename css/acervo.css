@@ -1,0 +1,79 @@
+/* ======================================================
+   ACERVO - ITENS EM EXPOSIÇÃO
+====================================================== */
+
+.acervo-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.acervo-item {
+    text-align: center;
+}
+
+.acervo-titulo {
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--cor-primaria);
+    transition: 0.3s ease;
+}
+
+.acervo-item:hover .acervo-titulo {
+    color: var(--cor-texto);
+}
+
+.acervo-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    transition: 0.3s ease;
+    background: #f4efe6;
+}
+
+.acervo-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.18);
+}
+
+.acervo-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.acervo-card:hover img {
+    transform: scale(1.05);
+}
+
+.acervo-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(89, 61, 43, 0.92); 
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    overflow-y: auto;
+}
+
+.acervo-overlay p {
+    font-size: 0.95rem;
+    margin: 0;
+    color: white;
+}
+
+.acervo-card:hover .acervo-overlay {
+    opacity: 1;
+}
+
+.acervo-overlay::-webkit-scrollbar {
+    width: 6px;
+}

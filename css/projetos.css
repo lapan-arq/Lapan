@@ -1,0 +1,29 @@
+/* ======================================================
+   PROJETOS DE EXTENSÃO – PÁGINA
+====================================================== */
+
+.card-custom-projeto {
+    background-color: var(--bege-fundo);
+    border-radius: 12px;
+    padding: 1.8rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    border-left: 6px solid var(--marrom-medio);
+    transition: all 0.3s ease;
+}
+
+.card-custom-projeto h3 {
+    color: var(--marrom-texto);
+    font-size: 1.3rem;
+}
+
+.card-custom-projeto p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 0.8rem;
+}
+
+.card-custom-projeto:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+    border-left-color: var(--marrom-texto);
+}

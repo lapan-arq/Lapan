@@ -1,0 +1,150 @@
+/* ======================================================
+   NAVBAR (HEADER)
+====================================================== */
+
+.navbar {
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    font-size: 1rem;
+    transition: 0.2s;
+}
+
+.nav-link:hover {
+    color: var(--cor-secundaria) !important;
+}
+
+/* ======================================================
+   RODAPÉ (FOOTER)
+====================================================== */
+
+.footer-lapan {
+    background-color: #593D2B;
+    color: #ffffff;
+    margin-top: 40px;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    animation: fadeIn 0.8s ease-out;
+}
+
+.footer-title {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.45rem;
+    margin-bottom: 5px;
+}
+
+.footer-sub {
+    color: #ffffff;
+    font-size: 0.95rem;
+    opacity: 0.85;
+}
+
+.footer-link {
+    margin: 0 12px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.footer-link:hover {
+    color: #c79248; 
+}
+
+.footer-contact {
+    margin: 3px 0;
+    font-size: 0.95rem;
+    color: #ffffff;
+}
+
+.footer-contact i {
+    margin-right: 8px;
+    color: #ffffff;
+}
+
+.footer-divider {
+    border-color: rgba(255, 255, 255, 0.25);
+    margin-top: 25px;
+}
+
+.footer-copy {
+    margin-top: 18px;
+    opacity: 0.75;
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+.footer-logo {
+    height: 45px;
+    margin-right: 12px;
+    margin-top: 10px;
+    filter: brightness(1.1);
+}
+
+/* --- Estilos extraídos do HTML de Contato --- */
+
+/* Navegação */
+.nav-custom-bg {
+    background-color: #593D2B;
+}
+
+.btn-menu-white {
+    filter: invert(1);
+}
+
+/* Seção de Introdução */
+.intro-contato-texto {
+    max-width: 700px;
+    margin: auto;
+}
+
+/* Card de E-mail */
+.card-email-texto {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.card-email-sub {
+    opacity: 0.8;
+}
+
+/* Seção de Localização */
+.icone-mapa {
+    font-size: 2.3rem;
+    color: var(--cor-secundaria);
+    margin-right: 12px;
+}
+
+.map-container-estilizado {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.map-iframe-clean {
+    border: 0;
+}
+
+/* --- Estilos extraídos do HTML "Sobre" --- */
+
+/* Fundo sutil para seções de destaque na página Sobre */
+.bg-bege-suave {
+    background-color: #faf7f2;
+}
+
+/* Largura controlada para o bloco descritivo principal */
+.card-sobre-medio {
+    max-width: 900px;
+}
+
+/* Largura estendida para o bloco histórico completo */
+.card-sobre-largo {
+    max-width: 1000px;
+}

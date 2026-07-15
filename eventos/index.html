@@ -1,58 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eventos - LAPAN UFMS</title>
-    <link rel="icon" type="img/png" href="../img/site/logo.png">
+    <title>LAPAN UFMS – Laboratório de Arqueologia</title>
+    <link rel="icon" type="img/png" href="img/site/logo.png">
 
     <!-- Ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <!-- Fontes e Bootstrap -->
+    <!-- Fonte -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/eventos.css">
+    <link rel="stylesheet" href="../css/responsive.css">
 </head>
+
 <body>
 
-    <!-- NAVBAR -->
     <header class="fade-in">
-    <nav class="navbar navbar-expand-lg" style="background-color:#593D2B;">
-        <div class="container">
+        <nav class="navbar navbar-expand-lg nav-custom-bg">
+            <div class="container">
 
-            <a class="navbar-brand text-light fw-bold" href="../">
-                <span class="texto-marrom-claro"></span>LAPAN</span> <span class="texto-marrom-medio">UFMS</span>
-            </a>
+                <a class="navbar-brand text-light fw-bold" href="./">
+                    <span class="texto-marrom-claro"></span>LAPAN <span class="texto-marrom-medio">UFMS</span>
+                </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
-                <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
-            </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+                    <span class="navbar-toggler-icon btn-menu-white"></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="menuPrincipal">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link text-light" href="../">Início</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="./">Eventos</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="../visita/">Visita</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="../projetos/">Projetos</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="../itens-em-exposicao/">Acervo</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="../contato/">Contato</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="../sobre/">Sobre</a></li>
-                    
-                </ul>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link text-light" href="../">Início</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="./">Eventos</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="../visita/">Visita</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="../projetos/">Projetos</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="../itens-em-exposicao/">Acervo</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-light" href="../contato/">Contato</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="../sobre/">Sobre</a></li>
+                    </ul>
+                </div>
+
             </div>
-
-        </div>
-    </nav>
+        </nav>
     </header>
 
-    <!-- ================= BANNER EVENTO ================= -->
+    <!-- BANNER DO EVENTO -->
     <section class="evento-banner">
         <div class="evento-overlay"></div>
-
-        <div class="container evento-banner-content">
+        <div class="container evento-banner-content text-start">
             <h1 class="titulo-principal-evento-banner">
                 III Encontro de Arqueologia e História Antiga
             </h1>
@@ -60,30 +65,26 @@
             <h2 class="subtitulo-banner">
                 I Fórum de Patrimônio Arqueológico e Mudanças Climáticas
             </h2>
-
             <p class="texto-marrom-bem-claro">
                 de 24 a 26 de junho de 2026
             </p>
         </div>
     </section>
 
-
-    <!-- ================= PANFLETO ================= -->
-    <section class="container fade-up">
+    <!-- CORPO DO EVENTO (PANFLETO E APRESENTAÇÃO) -->
+    <main class="container my-5">
 
         <div class="text-center mb-5">
             <h2 class="titulo-2">III Encontro de Arqueologia e História Antiga do Pantanal</h2>
             <p class="subtitulo-secao">
-                 Forum de Patrimônio Arqueológico e Mudanças Climáticas
+                Forum de Patrimônio Arqueológico e Mudanças Climáticas
             </p>
         </div>
 
-        <div class="panfleto-container">
-
+        <!-- Card do Panfleto / QR Code -->
+        <div class="panfleto-container mb-5">
             <div class="panfleto-card">
-
-                <img src="../img/eventos/panfleto.jpeg" alt="Cartaz do evento">
-
+                <img src="../img/eventos/panfleto.jpeg" alt="Cartaz do Evento" class="img-fluid">
                 <div class="panfleto-botoes">
                     <a href="../img/eventos/panfleto.jpeg" target="_blank" class="btn-primario">
                         Ampliar
@@ -93,416 +94,410 @@
                         Baixar
                     </a>
                 </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= INTRODUÇÃO ================= -->
-    <section class="container fade-up">
-
-        <div class="text-center mb-5">
-            <h2 class="titulo-2">Apresentação do Evento</h2>
-        </div>
-
-        <div class="evento-texto text-justify">
-
-            <p>
-                O III Encontro de Arqueologia e História Antiga no Pantanal – 
-                <strong>Saberes em Trânsito: arqueologia, história e os caminhos do conhecimento</strong> 
-                corresponde à terceira edição de um evento que vem se consolidando na região como espaço de interação, diálogo e circulação de saberes em torno das temáticas do passado.
-            </p>
-
-            <p>
-                O evento promove debates a partir do território pantaneiro e de suas múltiplas conexões históricas, arqueológicas, culturais e ambientais, ampliando a troca entre pesquisadores, estudantes e comunidade.
-            </p>
-
-            <p>
-                Nesta edição, o encontro ocorre em diálogo com o 
-                <strong>I Fórum sobre Patrimônio Arqueológico e Mudanças Climáticas</strong>, 
-                promovido no âmbito do projeto FAPESP/UNICAMP/IPHAN.
-            </p>
-
-            <p>
-                A proposta é contribuir para o desenvolvimento de ações conjuntas voltadas à preservação do patrimônio arqueológico diante dos efeitos das mudanças climáticas, fortalecendo a articulação entre pesquisa acadêmica, gestão pública e sociedade.
-            </p>
-        </div>
-
-    </section>
-
-
-    <!-- ================= PROGRAMAÇÃO ================= -->
-    <section class="container fade-up programacao-section">
-
-        <div class="text-center mb-5">
-            <h2 class="titulo-2">Programação</h2>
-
-            <p class="subtitulo-secao">
-                III Encontro de Arqueologia e História Antiga do Pantanal
-            </p>
-        </div>
-
-        <div class="programacao-grid">
-
-            <!-- DIA 1 -->
-            <div class="dia-card">
-
-                <div class="dia-topo">
-                    <span class="dia-numero">24</span>
-                    <div>
-                        <h3>24 de Junho</h3>
-                        <p>Quarta-feira</p>
-                    </div>
-                </div>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <span class="hora">14h </span>
-                        <div class="conteudo">
-                            <h5>Sessão de abertura</h5>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <span class="hora">14h - 18h</span>
-                        <div class="conteudo">
-                            <h5>Minicursos Acadêmicos</h5>
-                            <ul>
-                                <li>“Numismática” (PPGAS/UFMS)</li>
-                                <li>“QGIS aplicado à História e Arqueologia” (UFMS)</li>
-                            </ul>
-                            <div class="tag-forum">
-                                Fórum de Patrimônio Arqueológico
-                            </div>
-                            <div class="coffee">
-                                ☕ Coffee Break
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-item destaque">
-                        <span class="hora">19h - 21h</span>
-                        <div class="conteudo">
-                            <h5>Conferência</h5>
-                            <p>
-                                Profa. Dra. Bruna Rocha (UFOPA)
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            
-            <!-- DIA 2 -->
-            <div class="dia-card">
-                <div class="dia-topo">
-                    <span class="dia-numero">25</span>
-                    <div>
-                        <h3>25 de Junho</h3>
-                        <p>Quinta-feira</p>
-                    </div>
-                </div>
-                <div class="timeline">
-                    
-                    <div class="timeline-item">
-                        <span class="hora">14h - 18h</span>
-                        <div class="conteudo">
-                            <h5>Minicursos Acadêmicos</h5>
-                            <ul>
-                                <li>“Numismática”</li>
-                                <li>“QGIS aplicado à História e Arqueologia”</li>
-                            </ul>
-                            <div class="tag-forum">
-                                Fórum de Patrimônio Arqueológico
-                            </div>
-                            <div class="coffee">
-                                ☕ Coffee Break
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-item destaque">
-                        <span class="hora">19h - 21h</span>
-                        <div class="conteudo">
-                            <h5>Mesa Redonda</h5>
-                            <ul>
-                                <li>Profa. Dra. Nathalia Monseff Junqueira (UFMS/CPTL)</li>
-                                <li>Prof. Dr. Carlos Eduardo da Costa Campos (UFMS/FACH/PPGAS)</li>
-                                <li>Prof. Dr. André Pelegrinelli (UFMS/CPAN)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- DIA 3 -->
-            <div class="dia-card">
-                <div class="dia-topo">
-                    <span class="dia-numero">26</span>
-                    <div>
-                        <h3>26 de Junho</h3>
-                        <p>Sexta-feira</p>
-                    </div>
-                </div>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <span class="hora">09h - 12h</span>
-                        <div class="conteudo">
-                            <h5>Educação Patrimonial</h5>
-                            <p>
-                                Passeio pela Orla
-                                <strong>(R$ 30,00 por pessoa)</strong>
-                            </p>
-                            <div class="tag-forum">
-                                Fórum de Patrimônio Arqueológico
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-item intervalo">
-                        <span class="hora">12h</span>
-                        <div class="conteudo">
-                            <p>Intervalo</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <span class="hora">14h - 18h</span>
-                        <div class="conteudo">
-                            <h5>Comunicações de Pesquisa</h5>
-                            <div class="tag-forum">
-                                Fórum de Patrimônio Arqueológico
-                            </div>
-                            <div class="coffee">
-                                ☕ Coffee Break
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-item destaque">
-                        <span class="hora">19h - 21h</span>
-                        <div class="conteudo">
-                            <h5>Mesa Redonda</h5>
-                            <ul>
-                                <li>Profa. Dra. Lia Brambilla (UFMS/FACH)</li>
-                                <li>Profa. Dra. Aline Vieira de Carvalho (UNICAMP)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
-    </section>
 
+        <!-- ================= INTRODUÇÃO ================= -->
+        <section class="container fade-up">
 
-    <!-- ================= CTA FINAL ================= -->
-    <section class="text-center fade-up">
+            <div class="text-center mb-5">
+                <h2 class="titulo-2">Apresentação do Evento</h2>
+            </div>
 
-        <div class="evento-cta">
+            <div class="evento-texto text-justify">
 
-            <h3 class="titulo-2">Inscrições e Informações</h3>
+                <p>
+                    O III Encontro de Arqueologia e História Antiga no Pantanal –
+                    <strong>Saberes em Trânsito: arqueologia, história e os caminhos do conhecimento</strong>
+                    corresponde à terceira edição de um evento que vem se consolidando na região como espaço de
+                    interação, diálogo e circulação de saberes em torno das temáticas do passado.
+                </p>
 
-            <p>
-                Escolha abaixo a modalidade de participação no evento.
-            </p>
+                <p>
+                    O evento promove debates a partir do território pantaneiro e de suas múltiplas conexões históricas,
+                    arqueológicas, culturais e ambientais, ampliando a troca entre pesquisadores, estudantes e
+                    comunidade.
+                </p>
 
-            <div class="cta-flex">
+                <p>
+                    Nesta edição, o encontro ocorre em diálogo com o
+                    <strong>I Fórum sobre Patrimônio Arqueológico e Mudanças Climáticas</strong>,
+                    promovido no âmbito do projeto FAPESP/UNICAMP/IPHAN.
+                </p>
 
-                <!-- TATU -->
-                <div class="cta-tatu">
-                    <img src="../img/site/tatu_apontando.png" alt="Mascote tatu">
+                <p>
+                    A proposta é contribuir para o desenvolvimento de ações conjuntas voltadas à preservação do
+                    patrimônio arqueológico diante dos efeitos das mudanças climáticas, fortalecendo a articulação entre
+                    pesquisa acadêmica, gestão pública e sociedade.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- ================= PROGRAMAÇÃO ================= -->
+        <section class="container fade-up programacao-section">
+
+            <div class="text-center mb-5">
+                <h2 class="titulo-2">Programação</h2>
+
+                <p class="subtitulo-secao">
+                    III Encontro de Arqueologia e História Antiga do Pantanal
+                </p>
+            </div>
+
+            <div class="programacao-grid">
+
+                <!-- DIA 1 -->
+                <div class="dia-card">
+
+                    <div class="dia-topo">
+                        <span class="dia-numero">24</span>
+                        <div>
+                            <h3>24 de Junho</h3>
+                            <p>Quarta-feira</p>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <span class="hora">08h30 - 09h</span>
+                            <div class="conteudo">
+                                <h5>Sessão de abertura</h5>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="hora">09h - 12h</span>
+                            <div class="conteudo">
+                                <h5>Educação Patrimonial</h5>
+                                <p>Passeio Histórico</p>
+                                <div class="tag-forum">
+                                    Fórum de Patrimônio Arqueológico
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item intervalo">
+                            <span class="hora">12h</span>
+                            <div class="conteudo">
+                                <p>Intervalo</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="hora">14h - 18h</span>
+                            <div class="conteudo">
+                                <h5>Minicursos Acadêmicos</h5>
+                                <ul>
+                                    <li>“Numismática” (PPGAS/UFMS)</li>
+                                    <li>“QGIS aplicado à História e Arqueologia” (UFMS)</li>
+                                </ul>
+                                <div class="tag-forum">
+                                    Fórum de Patrimônio Arqueológico
+                                </div>
+                                <div class="coffee">
+                                    ☕ Coffee Break
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item destaque">
+                            <span class="hora">19h - 21h</span>
+                            <div class="conteudo">
+                                <h5>Conferência</h5>
+                                <p>
+                                    Profa. Dra. Bruna Rocha (UFOPA)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- BOTÕES -->
-                <div class="cta-botoes">
 
-                    <a 
-                        href="https://docs.google.com/forms/d/e/1FAIpQLScA1xYWP8YpuvOQfc3S01xFx0fXd1DqfwwDH_Jc11EB9JuWdA/viewform?usp=header"
-                        target="_blank"
-                        class="btn-secundario"
-                    >
-                        Inscrição para Palestras
+                <!-- DIA 2 -->
+                <div class="dia-card">
+                    <div class="dia-topo">
+                        <span class="dia-numero">25</span>
+                        <div>
+                            <h3>25 de Junho</h3>
+                            <p>Quinta-feira</p>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <span class="hora">09h - 12h</span>
+                            <div class="conteudo">
+                                <h5>Educação Patrimonial</h5>
+                                <p>Forte Junqueira</p>
+                                <div class="tag-forum">
+                                    Fórum de Patrimônio Arqueológico
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item intervalo">
+                            <span class="hora">12h</span>
+                            <div class="conteudo">
+                                <p>Intervalo</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="hora">14h - 18h</span>
+                            <div class="conteudo">
+                                <h5>Minicursos Acadêmicos</h5>
+                                <ul>
+                                    <li>“Numismática”</li>
+                                    <li>“QGIS aplicado à História e Arqueologia”</li>
+                                </ul>
+                                <div class="tag-forum">
+                                    Fórum de Patrimônio Arqueológico
+                                </div>
+                                <div class="coffee">
+                                    ☕ Coffee Break
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item destaque">
+                            <span class="hora">19h - 21h</span>
+                            <div class="conteudo">
+                                <h5>Mesa Redonda</h5>
+                                <ul>
+                                    <li>Profa. Dra. Nathalia Monseff Junqueira (UFMS/CPTL)</li>
+                                    <li>Prof. Dr. Carlos Eduardo da Costa Campos (UFMS/FACH/PPGAS)</li>
+                                    <li>Prof. Dr. André Pelegrinelli (UFMS/CPAN)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- DIA 3 -->
+                <div class="dia-card">
+                    <div class="dia-topo">
+                        <span class="dia-numero">26</span>
+                        <div>
+                            <h3>26 de Junho</h3>
+                            <p>Sexta-feira</p>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <span class="hora">09h - 12h</span>
+                            <div class="conteudo">
+                                <h5>Educação Patrimonial</h5>
+                                <p>
+                                    Passeio pela Orla
+                                    <strong>(R$ 30,00 por pessoa)</strong>
+                                </p>
+                                <div class="tag-forum">
+                                    Fórum de Patrimônio Arqueológico
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item intervalo">
+                            <span class="hora">12h</span>
+                            <div class="conteudo">
+                                <p>Intervalo</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="hora">14h - 18h</span>
+                            <div class="conteudo">
+                                <h5>Comunicações de Pesquisa</h5>
+                                <div class="tag-forum">
+                                    Fórum de Patrimônio Arqueológico
+                                </div>
+                                <div class="coffee">
+                                    ☕ Coffee Break
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item destaque">
+                            <span class="hora">19h - 21h</span>
+                            <div class="conteudo">
+                                <h5>Mesa Redonda</h5>
+                                <ul>
+                                    <li>Profa. Dra. Lia Brambilla (UFMS/FACH)</li>
+                                    <li>Profa. Dra. Aline Vieira de Carvalho (UNICAMP)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INSCRIÇÕES E INFORMAÇÕES (COM O TATU) -->
+        <section class="text-center fade-up">
+
+            <div class="evento-cta">
+
+                <h3 class="titulo-2">Inscrições e Informações</h3>
+
+                <p>
+                    Escolha abaixo a modalidade de participação no evento.
+                </p>
+                <div class="cta-flex">
+                    <div class="cta-tatu">
+                        <img src="../img/site/tatu_apontando.png" alt="Mascote Tatu">
+                    </div>
+                    <!-- BOTÕES -->
+                    <div class="cta-botoes">
+
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScA1xYWP8YpuvOQfc3S01xFx0fXd1DqfwwDH_Jc11EB9JuWdA/viewform?usp=header"
+                            target="_blank" class="btn-secundario">
+                            Inscrição para Palestras
+                        </a>
+
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdz1jl3HngkBpQgRXflyDRtHUV4DWIQvR1KWBO57X8y0r38eA/viewform?usp=header"
+                            target="_blank" class="btn-secundario">
+                            Comunicações Científicas
+                        </a>
+
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe7hse0R4yqqxAydBW08y2vzUiieXfp84LeGpEHZWhIbkk7Yw/viewform?usp=header"
+                            target="_blank" class="btn-secundario">
+                            Fórum de Valores
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ATIVIDADES COMPLEMENTARES -->
+        <section class="container fade-up">
+
+            <div class="formularios-extra">
+
+                <div class="text-center mb-5">
+
+                    <h2 class="titulo-2">
+                        Atividades Complementares
+                    </h2>
+
+                    <p class="subtitulo-secao">
+                        Inscrições para minicursos e passeios do evento
+                    </p>
+
+                </div>
+
+
+                <div class="formulario-bloco">
+
+                    <a href="https://forms.gle/7ieJHBqvYuWfcxLP7" target="_blank" class="formulario-item">
+                        <span class="formulario-tag">
+                            Minicurso • 24/06
+                        </span>
+
+                        <h4>Introdução à Numismática</h4>
+
+                        <p>
+                            Inscrição para participação no minicurso acadêmico.
+                        </p>
                     </a>
 
-                    <a 
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSdz1jl3HngkBpQgRXflyDRtHUV4DWIQvR1KWBO57X8y0r38eA/viewform?usp=header"
-                        target="_blank"
-                        class="btn-secundario"
-                    >
-                        Comunicações Científicas
+
+                    <a href="https://forms.gle/D7vQKt2LxvPhGV8bA" target="_blank" class="formulario-item">
+                        <span class="formulario-tag">
+                            Minicurso • 25/06
+                        </span>
+
+                        <h4>Mapeando o Patrimônio</h4>
+
+                        <p>
+                            Oficina aplicada à história e arqueologia.
+                        </p>
                     </a>
 
-                    <a 
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSe7hse0R4yqqxAydBW08y2vzUiieXfp84LeGpEHZWhIbkk7Yw/viewform?usp=header"
-                        target="_blank"
-                        class="btn-secundario"
-                    >
-                        Fórum de Valores
+
+                    <a href="https://forms.gle/WHAJjBctwc5HWx4S7" target="_blank" class="formulario-item">
+                        <span class="formulario-tag">
+                            Passeio • 24/06
+                        </span>
+
+                        <h4>Passeio Histórico pelo Centro</h4>
+
+                        <p>
+                            Atividade guiada de educação patrimonial.
+                        </p>
+                    </a>
+
+
+                    <a href="https://forms.gle/mcoLd89Lc8gdaWaeA" target="_blank" class="formulario-item">
+                        <span class="formulario-tag">
+                            Passeio • 25/06
+                        </span>
+
+                        <h4>Visita ao Forte Junqueira</h4>
+
+                        <p>
+                            Visita histórica orientada.
+                        </p>
+                    </a>
+
+
+                    <a href="https://forms.gle/TUQsi8BJ5DTcKW7H9" target="_blank" class="formulario-item">
+                        <span class="formulario-tag">
+                            Passeio • 26/06
+                        </span>
+
+                        <h4>Passeio pela Orla</h4>
+
+                        <p>
+                            Atividade cultural e patrimonial.
+                        </p>
                     </a>
 
                 </div>
 
             </div>
 
-        </div>
+        </section>
 
-    </section>
-<!-- ================= FORMULÁRIOS EXTRAS ================= -->
+        <!-- PARA MAIS INFORMAÇÕES -->
+        <section class="text-center fade-up">
+            <div class="container">
 
-<section class="container fade-up">
-
-    <div class="formularios-extra">
-
-        <div class="text-center mb-5">
-
-            <h2 class="titulo-2">
-                Atividades Complementares
-            </h2>
-
-            <p class="subtitulo-secao">
-                Inscrições para minicursos e passeios do evento
-            </p>
-
-        </div>
-
-
-        <div class="formulario-bloco">
-
-            <a 
-                href="https://forms.gle/7ieJHBqvYuWfcxLP7"
-                target="_blank"
-                class="formulario-item"
-            >
-                <span class="formulario-tag">
-                    Minicurso • 24/06
-                </span>
-
-                <h4>Introdução à Numismática</h4>
-
+                <h3 class="titulo-2">Para mais informações</h3>
                 <p>
-                    Inscrição para participação no minicurso acadêmico.
+                    Acompanhe atualizações, inscrições e materiais do evento nos canais oficiais.
                 </p>
-            </a>
-
-
-            <a 
-                href="https://forms.gle/D7vQKt2LxvPhGV8bA"
-                target="_blank"
-                class="formulario-item"
-            >
-                <span class="formulario-tag">
-                    Minicurso • 25/06
-                </span>
-
-                <h4>Mapeando o Patrimônio</h4>
-
-                <p>
-                    Oficina aplicada à história e arqueologia.
-                </p>
-            </a>
-
-
-            <a 
-                href="https://forms.gle/WHAJjBctwc5HWx4S7"
-                target="_blank"
-                class="formulario-item"
-            >
-                <span class="formulario-tag">
-                    Passeio • 24/06
-                </span>
-
-                <h4>Passeio Histórico pelo Centro</h4>
-
-                <p>
-                    Atividade guiada de educação patrimonial.
-                </p>
-            </a>
-
-
-            <a 
-                href="https://forms.gle/mcoLd89Lc8gdaWaeA"
-                target="_blank"
-                class="formulario-item"
-            >
-                <span class="formulario-tag">
-                    Passeio • 25/06
-                </span>
-
-                <h4>Visita ao Forte Junqueira</h4>
-
-                <p>
-                    Visita histórica orientada.
-                </p>
-            </a>
-
-
-            <a 
-                href="https://forms.gle/TUQsi8BJ5DTcKW7H9"
-                target="_blank"
-                class="formulario-item"
-            >
-                <span class="formulario-tag">
-                    Passeio • 26/06
-                </span>
-
-                <h4>Passeio pela Orla</h4>
-
-                <p>
-                    Atividade cultural e patrimonial.
-                </p>
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-    <section class="text-center fade-up">
-
-        <div class="container">
-
-            <h3 class="titulo-2">Para mais informações</h3>
-
-            <p>
-                Acompanhe atualizações, inscrições e materiais do evento nos canais oficiais.
-            </p>
-
-            <div class="botoes-evento">
-                <a href="../" class="btn-primario">Site Oficial</a>
-                <a href="https://www.instagram.com/lapan_ufms" target="_blank" class="btn-primario"><i class="fa-brands fa-instagram icone-contact"></i> Instagram</a>
+                <div class="botoes-evento">
+                    <a href="../" class="btn-primario">Site Oficial</a>
+                    <a href="https://www.instagram.com/lapan_ufms" target="_blank" class="btn-primario"><i
+                            class="fa-brands fa-instagram icone-contact"></i> Instagram</a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
+        <!-- PARCEIROS E APOIO -->
+        <section class="container text-center fade-up">
+            <h2 class="titulo-2 mb-4">Realização</h2>
+            <div class="logos-evento">
+                <img src="../img/logos/lapan.png" alt="LAPAN">
+                <img src="../img/logos/ufms.png" alt="UFMS">
+                <img src="../img/logos/ppgas.png" alt="PPGAS">
+                <img src="../img/logos/glosa.png" alt="GLOSA">
+                <img src="../img/logos/ministerio_cultura.png" alt="Ministerio_Cultura">
+                <img src="../img/logos/lab.png" alt="LAP">
+                <img src="../img/logos/fapesp.png" alt="FAPESP">
+                <img src="../img/logos/iphan.png" alt="IPHAN">
+            </div>
+        </section>
 
-    <!-- ================= LOGOS ================= -->
-    <section class="container text-center fade-up">
-
-        <h2 class="titulo-2 mb-4">Realização</h2>
-
-        <div class="logos-evento">
-            <img src="../img/logos/lapan.png" alt="LAPAN">
-            <img src="../img/logos/ufms.png" alt="UFMS">
-            <img src="../img/logos/ppgas.png" alt="PPGAS">
-            <img src="../img/logos/glosa.png" alt="GLOSA">
-            <img src="../img/logos/ministerio_cultura.png" alt="Ministerio_Cultura">
-            <img src="../img/logos/lab.png" alt="LAP">
-            <img src="../img/logos/fapesp.png" alt="FAPESP">
-            <img src="../img/logos/iphan.png" alt="IPHAN">
-        </div>
-    </section>
-    
+    </main>
+    <!-- ========================================== -->
+    <!-- FIM DO CONTEÚDO MODIFICADO -->
+    <!-- ========================================== -->
 
     <!-- RODAPÉ -->
-    <footer  class="footer-lapan fade-in">
+    <footer class="footer-lapan fade-in">
         <div class="container py-4">
 
             <div class="row align-items-center">
 
-                <!-- Texto -->
                 <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
                     <h4 class="footer-title">LAPAN • UFMS</h4>
                     <p class="footer-sub">Laboratório de Arqueologia do Pantanal</p>
                 </div>
 
-                <!-- Links -->
                 <div class="col-md-4 text-center mb-3 mb-md-0">
                     <a href="../" class="footer-link">Início</a>
                     <a href="../visita/" class="footer-link">Visita</a>
@@ -511,7 +506,6 @@
                     <a href="../sobre/" class="footer-link">Sobre</a>
                 </div>
 
-                <!-- Contatos -->
                 <div class="col-md-4 text-center text-md-end">
                     <p class="footer-contact">
                         <i class="fa-solid fa-envelope"></i> arqueologia.cpan@ufms.br
@@ -531,9 +525,8 @@
         </div>
     </footer>
 
-
-    <!-- Bootstrap JS -->
+    <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
+
 </html>

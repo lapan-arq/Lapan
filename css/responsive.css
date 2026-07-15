@@ -1,0 +1,120 @@
+/* ======================================================
+   RESPONSIVO BANNER GERAL
+====================================================== */
+
+@media (max-width: 768px) {
+    .banner-curto {
+        height: auto;
+        padding: 60px 0;
+    }
+
+    .subtitulo-banner {
+        font-size: 1.1rem;
+    }
+}
+
+/* ======================================================
+   RESPONSIVO PROGRAMAÇÃO (EVENTOS)
+====================================================== */
+
+@media (max-width: 768px) {
+    .timeline-item {
+        flex-direction: column;
+    }
+
+    .timeline-item::before {
+        display: none;
+    }
+
+    .hora {
+        width: fit-content;
+    }
+
+    .timeline {
+        padding: 20px;
+    }
+
+    .dia-topo {
+        padding: 20px;
+    }
+
+    .dia-numero {
+        width: 60px;
+        height: 60px;
+        font-size: 1.6rem;
+    }
+}
+
+/* ======================================================
+   RESPONSIVO MOBILE CTA & LAYOUTS (EVENTOS)
+====================================================== */
+
+@media (max-width: 768px) {
+    .cta-flex {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: nowrap;
+    }
+
+    .cta-tatu img {
+        width: 120px;
+    }
+
+    .cta-botoes {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .cta-botoes a {
+        font-size: 0.85rem;
+        padding: 10px 12px;
+        width: 220px;
+    }
+
+    .evento-banner {
+        height: 55vh;
+        text-align: center;
+    }
+
+    .evento-banner-content {
+        text-align: center;
+    }
+
+    .panfleto-card {
+        max-width: 90%;
+    }
+
+    .logos-evento img {
+        height: 45px;
+    }
+
+    .formularios-extra {
+        margin-top: 60px;
+    }
+
+    .formulario-bloco {
+        padding: 22px;
+    }
+
+    .formulario-item {
+        min-height: auto;
+    }
+}
+
+/* ======================================================
+   RESPONSIVO ACERVO (ITENS EM EXPOSIÇÃO)
+====================================================== */
+
+@media (max-width: 768px) {
+    .acervo-card img {
+        height: 220px;
+    }
+
+    .acervo-overlay p {
+        font-size: 0.9rem;
+    }
+}

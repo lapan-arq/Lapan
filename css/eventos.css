@@ -1,0 +1,374 @@
+/* ======================================================
+   EVENTO - BANNER
+====================================================== */
+
+.evento-banner {
+    background: url('../img/eventos/banner.png') center/cover no-repeat;
+    height: 45vh;
+    min-height: 220px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.evento-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.evento-banner-content {
+    position: relative;
+    color: #fff;
+}
+
+.titulo-principal-evento-banner {
+    font-size: 1.80rem;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.evento-banner .subtitulo-banner {
+    font-weight: 400;
+    color: #f6efe3;
+    margin-top: 10px;
+}
+
+.evento-data {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.evento-local {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* ======================================================
+   PANFLETO EVENTO
+====================================================== */
+
+.panfleto-container {
+    display: flex;
+    justify-content: center;
+}
+
+.panfleto-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 15px;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.panfleto-card:hover {
+    transform: translateY(-5px);
+}
+
+.panfleto-card img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.panfleto-botoes {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* ======================================================
+   PROGRAMAÇÃO EVENTO
+====================================================== */
+
+.programacao-section {
+    padding: 80px 0;
+}
+
+.programacao-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.dia-card {
+    background: #f6efe3;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    border: 1px solid rgba(110,78,55,0.10);
+    transition: 0.3s;
+}
+
+.dia-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 35px rgba(0,0,0,0.12);
+}
+
+.dia-topo {
+    background: linear-gradient(135deg, #6e4e37, #8c674c);
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 24px;
+}
+
+.dia-numero {
+    width: 70px;
+    height: 70px;
+    background: #f3dfc5;
+    color: #6e4e37;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.dia-topo h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.dia-topo p {
+    margin: 4px 0 0;
+    color: #f1e2d2;
+}
+
+/* TIMELINE */
+
+.timeline {
+    padding: 28px;
+}
+
+.timeline-item {
+    display: flex;
+    gap: 18px;
+    position: relative;
+    padding-bottom: 28px;
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: 52px;
+    top: 40px;
+    width: 2px;
+    height: calc(100% - 10px);
+    background: #d6b99a;
+}
+
+.timeline-item:last-child::before {
+    display: none;
+}
+
+.hora {
+    min-width: 86px;
+    background: #e8d5bc;
+    color: #6e4e37;
+    padding: 10px 12px;
+    border-radius: 14px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+    height: fit-content;
+    position: relative;
+    z-index: 2;
+}
+
+.conteudo {
+    flex: 1;
+    background: white;
+    padding: 18px;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.conteudo h5 {
+    margin-bottom: 10px;
+    color: #5a3f2b;
+    font-weight: 700;
+}
+
+.conteudo p {
+    margin-bottom: 10px;
+    color: #5f5f5f;
+    line-height: 1.6;
+}
+
+.conteudo ul {
+    padding-left: 18px;
+    margin-top: 10px;
+}
+
+.conteudo li {
+    margin-bottom: 8px;
+    color: #5f5f5f;
+    line-height: 1.5;
+}
+
+.tag-forum {
+    display: inline-block;
+    margin-top: 12px;
+    background: #efe1cf;
+    color: #6e4e37;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.coffee {
+    margin-top: 14px;
+    background: #fff6ea;
+    padding: 10px 14px;
+    border-radius: 12px;
+    color: #8b5e3c;
+    font-weight: 600;
+}
+
+.intervalo .conteudo {
+    background: #f3eee7;
+    text-align: center;
+}
+
+.destaque .conteudo {
+    border-left: 5px solid #b5835a;
+    background: #fff8ef;
+}
+
+/* ======================================
+   LOGOS SUPORTE E APOIO
+====================================== */
+
+.logos-evento {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.logos-evento img {
+    height: 60px;
+    opacity: 0.85;
+    transition: 0.3s;
+}
+
+.logos-evento img:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* ======================================================
+   CTA EVENTO FINAL & EXTRAS
+====================================================== */
+
+.evento-cta {
+    background: #faf7f2;
+    padding: 40px 20px;
+    margin-top: 60px;
+}
+
+.botoes-evento {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cta-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.cta-tatu img {
+    width: 240px;
+    max-width: 100%;
+}
+
+.cta-botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+/* ======================================================
+   FORMULÁRIOS EXTRAS (EVENTOS)
+====================================================== */
+
+.formularios-extra {
+    margin-top: 80px;
+}
+
+.formulario-bloco {
+    background: #f6efe3;
+    border-radius: 28px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.08);
+    border: 1px solid rgba(89,61,43,0.08);
+}
+
+.formulario-item {
+    background: white;
+    border-radius: 22px;
+    padding: 25px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    border: 1px solid rgba(89,61,43,0.08);
+    color: #3e2a1f;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 220px;
+}
+
+.formulario-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+    color: #3e2a1f;
+}
+
+.formulario-tag {
+    display: inline-block;
+    width: max-content;
+    background: #593D2B;
+    color: #f6efe3;
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.formulario-item h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #593D2B;
+}
+
+.formulario-item p {
+    margin: 0;
+    line-height: 1.6;
+    color: #5f5147;
+}

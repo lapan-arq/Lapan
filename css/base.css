@@ -1,0 +1,245 @@
+/* ======================================================
+   FONTE, CORES E ESTILOS GLOBAIS
+====================================================== */
+
+:root {
+    --cor-primaria: #593D2B;
+    --cor-secundaria: #C79248;
+    --cor-clara: #faf7f2;
+    --cor-texto: #363636;
+    --cor-branco: #ffffff;
+
+    --marrom-claro: #e8dfd2;
+    --marrom-bem-claro: #fdf5e7;
+    --marrom-medio: #c9b8a3;
+    --marrom-escuro: #593D2B;
+    --marrom-texto: #4a3b2a;
+    --bege-fundo: #f6f3ee;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #ffffff;
+    color: var(--cor-texto);
+    margin: 0;
+    padding: 0;
+}
+
+/* ======================================================
+   SEÇÕES E TEXTOS GLOBAIS
+====================================================== */
+
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.titulo-2 {
+    font-size: 2.2rem;
+    color: var(--cor-primaria);
+    font-weight: 700;
+}
+
+p {
+    color: var(--cor-texto);
+    font-size: 1.05rem;
+}
+
+.texto-marrom-bem-claro {
+    color: var(--marrom-bem-claro);
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.texto-marrom-claro {
+    color: #e9cdb3;
+}
+
+.texto-marrom-medio {
+    color: #f7dcb8;
+}
+
+.titulo-secao {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--cor-primaria);
+}
+
+.subtitulo-secao {
+    font-size: 1rem;
+    color: #7a6f63;
+}
+
+.subtitulo-secao-2 {
+    font-size: 1rem;
+    color: #644520;
+}
+
+/* ======================================================
+   BOTÕES GERAIS
+====================================================== */
+
+.btn-primario,
+.btn-secundario,
+.btn-terciario {
+    display: inline-block;
+    padding: 10px 26px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.25s ease;
+}
+
+.btn-quaternario {
+    display: inline-block;
+    padding: 0.6rem 1.4rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primario {
+    background: var(--cor-secundaria);
+    color: white;
+    border: none;
+}
+
+.btn-primario:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.20);
+}
+
+.btn-secundario {
+    background: var(--cor-primaria);
+    color: white;
+}
+
+.btn-secundario:hover {
+    background: #6f4d37;
+}
+
+.btn-terciario {
+    background: var(--marrom-claro);
+    color: black;
+}
+
+.btn-terciario:hover {
+    background: var(--marrom-medio);
+}
+
+.btn-quaternario {
+    background-color: var(--marrom-claro);
+    color: #363636;
+}
+
+.btn-quaternario:hover {
+    background-color: var(--marrom-medio);
+    transform: scale(1.05);
+}
+
+/* ======================================================
+   CARDS GERAIS
+====================================================== */
+
+.card-custom {
+    background: var(--cor-branco);
+    padding: 25px;
+    border-radius: 12px;
+    transition: 0.3s ease;
+    border: 1px solid #e8e4df;
+}
+
+.card-custom:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 26px rgba(0,0,0,0.15);
+}
+
+/* ======================================================
+   ANIMAÇÕES GERAIS
+====================================================== */
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(25px);
+    animation: fadeUp 0.9s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.scale-hover {
+    transition: transform 0.3s ease;
+}
+
+.scale-hover:hover {
+    transform: scale(1.04);
+}
+
+.banner-curto {
+    background: url('../img/site/campus_cpan.jpg') center / cover no-repeat;
+    height: 32vh;
+    min-height: 220px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Overlay escuro */
+.banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+/* Conteúdo */
+.banner-conteudo {
+    position: relative;
+    z-index: 2;
+}
+
+/* Título principal */
+.titulo-principal-banner {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Subtítulo */
+.subtitulo-banner {
+    font-size: 1.9rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #f6efe3;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* --- Classes Utilitárias Globais --- */
+.intro-contato-texto {
+    max-width: 700px;
+    margin: auto;
+}
+
+.map-container-estilizado {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.map-iframe-clean {
+    border: 0;
+}
